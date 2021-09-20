@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    @@include('header.html')
+    <div class="buttons">
+        <button id="first--btn" class="buttons__aboutUS"><a href="about.html">About Us</a></button>
+        <button class="buttons__aboutUS"><a href="service.html">FAQ</a></button>
+    </div>
+    @@include('aboutSection.html')
+    <section class="about__second">
+        <div class="about__second--block">
+            <h1 class="about__second--block--header">Our managing office in Ukraine</h1>
+            <p class="about__second--block--text">Our managing office is located in Kyiv Ukraine.
+                A team of Europeans and Ukranian individuals is at work coordinating our partners and inspectors around Ukraine.</p>
+        </div>
+        <img src="/img/AboutPhoto2.png" alt="" class="about__photo">
+    </section>
+    @@include('footer.html')
+</body>
+</html>

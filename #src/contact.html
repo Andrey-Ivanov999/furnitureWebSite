@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    @@include('header.html')
+    <section class="main--contacts">
+        <form class="form--contact">
+            <h1 class="header--contact">Contact</h1>
+            <h2 class="subheader--contact">Contact details</h2>
+            <input type="text"  id = "name__contact" class="contact__name" placeholder="name and surname">
+            <label for="name__contact" class="name__label" ></label>
+            <input type="email" id="email__contact" class="contact__name" placeholder="e-mail">
+            <label for="email__contact"></label>
+            <input type="tel" id="phone__contact" class="contact__name" placeholder="Phone or Messenger">
+            <label for="phone__contact"></label>
+            <input type="text" id="company__contact" class="contact__name" placeholder="Company">
+            <label for="company__contact"></label>
+            <h2 class="subheader--contact">Tell us about the project</h2>
+            <input type="text" id="message__contact" class="contact__message" placeholder="Tell us about your project">
+            <label for="message__contact"></label>
+<div class="contact__buttons">
+            <button class="header__contacts--navigation-btn">Submit your application</button>
+            <button class="contact__attach--file--btn">Attach file</button>
+        </div>
+        </form>
+        <div class="block__contacts">
+            <span class="block__contacts--phone">+38 096 319 86 71</span>
+
+            <div class="block__contacts--email"><a href="#" >mandcimportsua@gmail.com</a></div>
+            <div class="block__contacts--email"><a href="#">Telegram</a></div>
+            <h6 class="block__contacts--subheader">Our addresses</h6>
+            <span class="block__contacts--phone">Shota rustaveli 4
+                Kiev, Ukraine</span>
+            <h6 class="block__contacts--subheader">Our social media</h6>
+            <div class="block__contacts--email"><a href="#" >Facebook</a></div>
+            <div  class="block__contacts--email"><a href="#">Instagram</a></div>
+        </div>
+    </section>
+    @@include('footer.html')
+</body>
+</html>
