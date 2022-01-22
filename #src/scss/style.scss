@@ -92,7 +92,9 @@ color: black;
     display: flex;
     background-image:url('/img/main photo.png');
     background-blend-mode: multiply;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     justify-content: center;
@@ -649,8 +651,9 @@ padding-right: 20px;
 
  @media(max-width:1440px){
      .header__contacts{
+         max-width: 940px;
   justify-content: center;
-  margin-left: 50px;
+//   margin-left: 50px;
   &--navigation{
       margin-left: 40px;
       max-width: 1080px;
@@ -671,8 +674,18 @@ padding-right: 20px;
          max-width: 1080px;
      }
      .main-second--first-row{
-         max-width: 1280px;
-         margin-left: 20px;
+         max-width: 1200px;
+        //  margin-left: 20px;
+     }
+     .main-second__cart{
+         margin: 15px;
+         max-width: 240px;
+     }
+     .card--picture{
+         max-width: 240px;
+     }
+     .main__text--message{
+         padding: 10px;
      }
 
 .form__header{
@@ -703,16 +716,17 @@ padding-right: 20px;
  }
  @media (max-width:1080px) {
 .header__contacts{
-    max-width: 960px;
+    margin: 0 auto;
+    max-width: 760px;
 }
     .header__contacts--navigation-link{
         margin-left: 10px;
     }
     .main-second__cart{
-        max-width: 210px;
+        max-width: 240px;
     }
     .card--picture{
-        width: 200px;
+        width: auto;;
     }
     .main-second__service{
         max-width: 300px;
@@ -745,11 +759,17 @@ padding-right: 20px;
     .about__second--block{
         margin-top: 80px;
     } 
+    .main-second--second-row{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        justify-items: center;
+     
+      }
  }
  @media(max-width:775px) {
      .header__contacts{
          max-width: 740px;
-         margin-left: 10px;
+        //  margin-left: 10px;
      }
      .header__contacts--navigation{
          margin-left: 1px;
@@ -766,12 +786,7 @@ padding-right: 20px;
          font-size: 12px;
          width: 120px;
      }
-     .main-second--second-row{
-       display: grid;
-       grid-template-columns:1fr 1fr;
-       justify-items: center;
-    
-     }
+
      .main-second__service{
          align-items: center;
          max-width: 250px;
@@ -983,7 +998,7 @@ margin-top: 120px;
     margin-bottom: 20px;
 }
  }
- @media (max-width:430px) {
+ @media (max-width:520px) {
     .main-second--second-row{
             grid-template-columns: 1fr;
     }
