@@ -75,8 +75,7 @@ color: black;
 &-btn{
     background: #FF3E3E;
     cursor: pointer;
-    width: 240px;
-    height: 60px;
+ padding: 30px;
     border-radius: 10px;
     font-family: 'Roboto';
     font-weight: normal;
@@ -196,8 +195,7 @@ max-width: 380px;
 }
 
 .about__all{
-    margin-top: 135px;
-    margin-left: 150px;
+margin: 135px 10px 0px 100px;
     font-family: "Roboto";
     max-width: 400px;
     &__header{
@@ -659,8 +657,10 @@ padding-right: 20px;
       max-width: 1080px;
   }
   &--navigation-btn{
-      margin-right: 30px;
-      width: 200px;
+    //   margin-right: 30px;
+    //   width: 200px;
+    padding: 15px;
+    margin: 0 15px;
   }
      }
      .main__text--header{
@@ -719,8 +719,14 @@ padding-right: 20px;
     margin: 0 auto;
     max-width: 760px;
 }
+.header__contacts--navigation-btn{
+padding: 15px;
+margin: 5px 30px 5px 5px;
+font-size: 12px;
+}
     .header__contacts--navigation-link{
         margin-left: 10px;
+        font-size: 14px;
     }
     .main-second__cart{
         max-width: 240px;
@@ -745,16 +751,16 @@ padding-right: 20px;
         width: 130px;
     }
     .about--img{
-        width: 600px;
-        height: 500px;
+        width: 500px;
+        height: 400px;
     }
     .about__all{
         margin-left: 100px;
         font-size: 14px;
     }
     .about__photo{
-        width: 600px;
-        height: 500px;
+        width: 500px;
+        height: 400px;
     } 
     .about__second--block{
         margin-top: 80px;
@@ -777,9 +783,6 @@ padding-right: 20px;
      .header__contacts--navigation img{
          width: 240px;
 
-     }
-     .header__contacts--navigation-link{
-         font-size: 14px;
      }
      .header__contacts--navigation-btn{
          margin-right: 30px;
@@ -816,8 +819,7 @@ padding-right: 20px;
     height: 250px;
 }
 .about__all{
-    margin-top: 10px;
-    margin-left: 30px;
+margin: 10px 10px 0px 30px;
 }
 .form__input__block{
     margin-left: 10px;
@@ -992,6 +994,8 @@ margin-top: 120px;
 .contact__buttons{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
    
 }
 .header__contacts--navigation-btn{
